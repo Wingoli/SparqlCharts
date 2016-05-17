@@ -1,0 +1,11 @@
+{
+  "@metadata": {
+    "authors": [
+      "Oliver Lutzi"
+    ]
+  },
+  "sparqlcharts-desc": "Diese Programmerweiterung stellt verschiedene Visualisierungmöglichkeiten für das Ergebnis einer SPARQL-Abfrage zur Verfügung, z.B. Balkendiagramme, Tortendiagramme oder Zeitleisten.",
+  "sparqlcharts-i18n-welcome": "Willkommen bei der Lokalisierungs- und Internationalisierungsdatei der Programmerweiterung SparqlCharts",
+  "sparqlcharts-specialpage-heading": "SparqlCharts",
+  "sparqlcharts-specialpage-intro": "Willkommen auf der Spezialseite der Erweiterung SparqlCharts."
+}

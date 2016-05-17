@@ -1,0 +1,11 @@
+{
+  "@metadata": {
+    "authors": [
+      "Oliver Lutzi"
+    ]
+  },
+  "sparqlcharts-desc": "This extension provides different possibilities to visualize the result of a SPARQL query, e.g. pie charts, bar diagrams or timelines",
+  "sparqlcharts-i18n-welcome": "Welcome to the localization file of the SparqlCharts extension.",
+  "sparqlcharts-specialpage-heading": "SparqlCharts",
+  "sparqlcharts-specialpage-intro": "Welcome to the special page of the SparqlCharts extension."
+}

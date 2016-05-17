@@ -1,0 +1,49 @@
+@CHARSET "ISO-8859-1";  
+p {
+	font-size: 20px;
+}   
+		
+        .axis path,
+        	.axis line	{
+        		fill: none;
+        		stroke: black;
+        		shape-rendering: crispEdges;
+        	}
+        	
+        	.axis text	{
+        		font-family: sans-serif;
+        		font-size: 10px;
+        	}
+        	
+        	rect:hover	{
+        	opacity: 0.5;
+        		
+        	}
+        	.bartooltip	{
+	        	position: absolute;
+	        	width: auto;
+	        	height: auto;
+	        	padding: 8px;
+	        	background-color: white; 
+	        	pointer-events: none;
+	        	-webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+	        	-moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+	        	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+	        	-webkit-border-radius: 8px;
+	        	-moz-border-radius: 8px;
+	        	border-radius: 8px;
+        	}
+        	.bartooltip.hidden	{
+        		display:none;}
+        	.bartooltip p	{
+	        	margin: 2px;
+	        	font-family: sans-serif;
+	        	font-size: 15px;
+	        	line-height: 20px;
+        	}
+        	.bartooltip strong	{
+        		font-size: 18px;
+        	}
+        	.bartooltip span	{
+        		font-size: 13px;
+        	}

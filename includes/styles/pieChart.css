@@ -1,0 +1,6 @@
+@CHARSET "ISO-8859-1";
+
+svg.nvd3-svg {
+  width: 500px;
+  height: 500px;
+}

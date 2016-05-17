@@ -1,0 +1,65 @@
+{
+  "name": "SparqlCharts",
+  "version": "0.1",
+  "author": [
+    "Oliver Lutzi, Marvin Ruchay"
+  ],
+  "url": "https://www.mediawiki.org/wiki/Extension:SparqlCharts",
+  "descriptionmsg": "sparqlcharts-desc",
+  "license-name": "???",
+  "type": "other",
+  "AutoloadClasses": {
+    "Log": "includes/SparqlCharts_helpFunctions.php",
+    "SparqlChartsHooks": "SparqlCharts.hooks.php",
+    "SpecialSparqlCharts": "specials/SpecialSparqlCharts.php",
+    "SparqlChartsOutputFactory" : "includes/SparqlCharts_body.php",
+    "SparqlChartsOutputFormat" : "includes/SparqlChartsOutputFormat.php",
+    "SparqlChartsTable" : "includes/SparqlChartsOutputFormat.php",
+    "SparqlChartsBarChart" : "includes/SparqlChartsOutputFormat.php",
+    "SparqlChartsLineChart" : "includes/SparqlChartsOutputFormat.php",
+    "SparqlChartsPieChart" : "includes/SparqlChartsOutputFormat.php",
+    "SparqlChartsStackedAreaChart" : "includes/SparqlChartsOutputFormat.php",
+    "SparqlChartsStackedMultiBarChart" : "includes/SparqlChartsOutputFormat.php",
+    "SparqlChartsBoxPlot" : "includes/SparqlChartsOutputFormat.php",
+    "SparqlChartsKaplanCurve" : "includes/SparqlChartsOutputFormat.php",    
+    "SparqlChartsForceDirectedGraph" : "includes/SparqlChartsOutputFormat.php",
+    "SparqlChartsUtil" : "includes/SparqlCharts_body.php"
+  },
+  "config": {
+    "SparqlChartsEnableFoo": true
+  },
+  "ExtensionMessagesFiles": {
+    "SparqlChartsAlias": "SparqlCharts.i18n.alias.php",
+    "SparqlChartsMagic": "SparqlCharts.i18n.magic.php"
+  },
+  "Hooks": {
+    "ParserFirstCallInit": [
+    	"SparqlChartsHooks::onParserSetup"
+    ]
+  },
+  "MessagesDirs": {
+    "SparqlCharts": [
+      "i18n"
+    ]
+  },
+  "ResourceModules": {
+		"ext.SparqlCharts": {
+			"scripts": [
+				"includes/scripts/d3.v3.js",
+				"includes/scripts/nv.d3.js"
+			],
+			"styles": [
+				"includes/styles/sparqlcharts_barchart.css",
+				"includes/styles/nv.d3.css"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "SparqlCharts"
+	},
+  "SpecialPages": {
+    "SparqlCharts": "SpecialSparqlCharts"
+  },
+  "manifest_version": 1
+}
